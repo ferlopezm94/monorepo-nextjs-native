@@ -1,0 +1,61 @@
+{
+  "name": "@acme/core",
+  "version": "1.0.0",
+  "description": "Run TypeScript programs with eslint, prettier and semantic release support.",
+  "main": "src/app.js",
+  "repository": "git@github.com:good-better/starter-typescript.git",
+  "author": "Fernando López <ferlopezm94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "commit": "cz",
+    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "lint": "eslint . --ext .ts",
+    "prebuild": "rimraf ./build",
+    "semantic-release": "semantic-release",
+    "start": "node build/main.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@types/jest": "26.0.14",
+    "@types/node": "14.11.2",
+    "@typescript-eslint/eslint-plugin": "4.2.0",
+    "@typescript-eslint/parser": "4.2.0",
+    "commitizen": "4.2.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.9.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "husky": "4.3.0",
+    "jest": "26.4.2",
+    "lint-staged": "10.4.0",
+    "prettier": "2.1.2",
+    "rimraf": "3.0.2",
+    "semantic-release": "17.1.2",
+    "ts-jest": "26.4.0",
+    "ts-node-dev": "1.0.0-pre.63",
+    "typescript": "4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
