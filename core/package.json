@@ -18,6 +18,9 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
+  "dependencies": {
+    "axios": "0.20.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
