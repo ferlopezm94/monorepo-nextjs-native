@@ -4,9 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "web",
-    "core",
-    "views"
-  ]
+  "workspaces": {
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ],
+    "packages": [
+      "web",
+      "core",
+      "views",
+      "Mobile"
+    ]
+  }
 }
