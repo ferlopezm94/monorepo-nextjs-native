@@ -30,7 +30,7 @@ function HomePage(): JSX.Element {
           <p className='text-black flex justify-around'>
             <FontAwesomeIcon icon={['fab', 'apple']} size='2x' />
             <FontAwesomeIcon icon='laptop-code' size='2x' />
-            <FontAwesomeIcon icon='rocket' size='2x'/>
+            <FontAwesomeIcon icon='rocket' size='2x' />
           </p>
         </div>
       </main>

@@ -1,7 +1,4 @@
-// Tell webpack to compile the "acme" package (https://www.npmjs.com/package/next-transpile-modules)
-const withTM = require('next-transpile-modules')(['@acme']);
-
-module.exports = withTM({
+module.exports = {
   webpack: config => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -11,4 +8,4 @@ module.exports = withTM({
     config.resolve.extensions = ['.web.js', '.web.ts', '.web.tsx', ...config.resolve.extensions];
     return config;
   },
-});
+};
