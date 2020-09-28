@@ -1,7 +1,8 @@
 {
   "name": "@acme/views",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Run NextJS applications with typescript, tailwindcss, and semantic release support.",
+  "main": "src/index.ts",
   "repository": "git@github.com:good-better/starter-nextjs.git",
   "author": "Fernando López <ferlopezm94@gmail.com>",
   "license": "MIT",
@@ -18,6 +19,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@acme/core": "1.0.0",
     "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "5.14.0",
     "@fortawesome/free-solid-svg-icons": "5.14.0",

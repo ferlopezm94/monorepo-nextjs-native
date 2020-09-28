@@ -7,8 +7,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 library.add(faApple, faLaptopCode, faRocket);
 
-import './../styles/global.css';
-
 function App({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />;
 }
