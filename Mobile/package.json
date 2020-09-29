@@ -1,5 +1,5 @@
 {
-  "name": "Mobile",
+  "name": "@acme/mobile",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@acme/core": "1.0.0",
+    "@acme/views": "1.0.0",
     "react": "16.13.1",
     "react-native": "0.63.2"
   },

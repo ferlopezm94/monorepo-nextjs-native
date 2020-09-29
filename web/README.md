@@ -31,8 +31,8 @@ Make sure the following tools are installed in your system:
 Clone the GitHub repository and use `yarn` to install the dependencies:
 
 ```
-$ git clone https://github.com/good-better/starter-nextjs.git
-$ cd starter-nextjs
+$ git clone https://github.com/ferlopezm94/monorepo-nextjs-native
+$ cd monorepo-nextjs-native
 $ yarn install
 ```
 
