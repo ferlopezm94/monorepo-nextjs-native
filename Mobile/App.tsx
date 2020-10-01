@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 import {apiClient} from '@acme/core';
+import {RandomName} from '@acme/views';
 
 declare const global: {HermesInternal: null | {}};
 
@@ -37,6 +38,7 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
+          <RandomName />
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
